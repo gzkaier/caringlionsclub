@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal & Privacy Policy | York Region Caring Lions Club</title>
+    <meta name="description" content="Comprehensive legal information, privacy policy, terms of use, cookie policy, and disclaimers for York Region Caring Lions Club.">
+    <meta name="keywords" content="privacy policy, terms of use, legal, PIPEDA, cookies, disclaimer, Lions Club">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/enhancements.css">
+    <link rel="stylesheet" href="css/photo-optimization.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Legal Page Specific Styles */
+        .legal-page {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+        
+        .legal-toc {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .legal-toc h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .legal-toc ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .legal-toc li {
+            margin: 0;
+        }
+        
+        .legal-toc a {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .legal-toc a:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .legal-toc a i {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            width: 30px;
+            text-align: center;
+        }
+        
+        .legal-section {
+            scroll-margin-top: 100px;
+            margin-bottom: 4rem;
+            padding: 2.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .legal-section h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-top: 0;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--primary-color);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .legal-section h2 i {
+            margin-right: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .legal-section h3 {
+            color: var(--secondary-color);
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .legal-section p {
+            margin-bottom: 1.25rem;
+            text-align: justify;
+        }
+        
+        .legal-section ul, .legal-section ol {
+            margin: 1.25rem 0;
+            padding-left: 2rem;
+        }
+        
+        .legal-section li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .highlight-box {
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        
+        .highlight-box strong {
+            color: var(--secondary-color);
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, rgba(25, 67, 135, 0.05) 0%, rgba(255, 215, 0, 0.05) 100%);
+            border: 2px solid var(--primary-color);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+        
+        .info-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 80px;
+            right: 30px;
+            background: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background: var(--secondary-color);
+            transform: translateY(-5px);
+        }
+        
+        .quick-nav {
+            position: sticky;
+            top: 80px;
+            background: white;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #e0e0e0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .quick-nav-inner {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+        
+        .quick-nav a {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-light);
+            border: 2px solid transparent;
+            border-radius: 50px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .quick-nav a i {
+            margin-right: 0.5rem;
+        }
+        
+        .quick-nav a:hover, .quick-nav a.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        
+        .effective-date {
+            background: rgba(255, 193, 7, 0.15);
+            padding: 1.25rem;
+            border-left: 5px solid var(--secondary-color);
+            margin: 0 0 3rem 0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .effective-date i {
+            font-size: 2rem;
+            margin-right: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        @media print {
+            .top-nav, .quick-nav, .back-to-top, .bottom-nav, .btn {
+                display: none !important;
+            }
+            
+            .legal-section {
+                page-break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            body {
+                font-size: 12pt;
+                line-height: 1.6;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .legal-toc ul {
+                grid-template-columns: 1fr;
+            }
+            
+            .legal-section {
+                padding: 1.5rem;
+            }
+            
+            .legal-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .back-to-top {
+                bottom: 70px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+<body class="legal-page">
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://page.gensparksite.com/v1/base64_upload/25b65288eea400a4e2bff05935808fb1" alt="York Region Caring Lions Club Logo" style="height: 50px; margin-right: 12px;">
+                <span class="logo-text">
+                    <span class="en">York Region Caring Lions Club</span>
+                    <span class="zh" style="display: none;">加拿大关爱狮子会</span>
+                </span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-en="Home" data-zh="首页">Home</a></li>
+                <li><a href="about.html" data-en="About Us" data-zh="关于我们">About Us</a></li>
+                <li><a href="programs.html" data-en="Programs" data-zh="项目活动">Programs</a></li>
+                <li><a href="events.html" data-en="Events" data-zh="活动日历">Events</a></li>
+                <li><a href="gallery.html" data-en="Gallery" data-zh="照片墙">Gallery</a></li>
+                <li><a href="contact.html" data-en="Contact" data-zh="联系我们">Contact</a></li>
+                <li><a href="donate.html" class="btn-donate" data-en="Donate" data-zh="捐款支持">Donate</a></li>
+            </ul>
+            <button class="lang-switch" id="langSwitch">
+                <span class="en">中文</span>
+                <span class="zh" style="display: none;">EN</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                <span class="en">Legal & Privacy Policy</span>
+                <span class="zh" style="display: none;">法律声明与隐私政策</span>
+            </h1>
+            <p class="page-subtitle">
+                <span class="en">Your privacy and trust matter to us. Please review our comprehensive policies to understand how we protect and use your information.</span>
+                <span class="zh" style="display: none;">您的隐私和信任对我们至关重要。请查阅我们的综合政策，了解我们如何保护和使用您的信息。</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Sticky Quick Navigation -->
+    <div class="quick-nav">
+        <div class="container">
+            <div class="quick-nav-inner">
+                <a href="#privacy" data-section="privacy">
+                    <i class="fas fa-shield-alt"></i>
+                    <span class="en">Privacy</span>
+                    <span class="zh" style="display: none;">隐私</span>
+                </a>
+                <a href="#terms" data-section="terms">
+                    <i class="fas fa-file-contract"></i>
+                    <span class="en">Terms</span>
+                    <span class="zh" style="display: none;">条款</span>
+                </a>
+                <a href="#cookies" data-section="cookies">
+                    <i class="fas fa-cookie-bite"></i>
+                    <span class="en">Cookies</span>
+                    <span class="zh" style="display: none;">Cookies</span>
+                </a>
+                <a href="#disclaimer" data-section="disclaimer">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span class="en">Disclaimer</span>
+                    <span class="zh" style="display: none;">免责</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="content-section" style="padding: 4rem 0; background: var(--bg-light);">
+        <div class="container" style="max-width: 1000px;">
+            
+            <!-- Effective Date -->
+            <div class="effective-date">
+                <i class="fas fa-calendar-check"></i>
+                <div>
+                    <strong style="font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">
+                        <span class="en">Effective Date:</span>
+                        <span class="zh" style="display: none;">生效日期：</span>
+                    </strong>
+                    <span style="font-size: 1rem;">
+                        <span class="en">November 8, 2025</span>
+                        <span class="zh" style="display: none;">2025年11月8日</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Table of Contents -->
+            <div class="legal-toc">
+                <h2>
+                    <i class="fas fa-list-ul" style="margin-right: 0.75rem;"></i>
+                    <span class="en">Table of Contents</span>
+                    <span class="zh" style="display: none;">目录</span>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#privacy">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong><span class="en">Privacy Policy</span><span class="zh" style="display: none;">隐私政策</span></strong><br>
+                                <small style="opacity: 0.7;"><span class="en">How we collect and use your data</span><span class="zh" style="display: none;">我们如何收集和使用您的数据</span></small>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#terms">
+                            <i class="fas fa-file-contract"></i>
+                            <div>
+                                <strong><span class="en">Terms of Use</span><span class="zh" style="display: none;">使用条款</span></strong><br>
+                                <small style="opacity: 0.7;"><span class="en">Rules for using our website</span><span class="zh" style="display: none;">使用我们网站的规则</span></small>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#cookies">
+                            <i class="fas fa-cookie-bite"></i>
+                            <div>
+                                <strong><span class="en">Cookie Policy</span><span class="zh" style="display: none;">Cookie政策</span></strong><br>
+                                <small style="opacity: 0.7;"><span class="en">How we use cookies</span><span class="zh" style="display: none;">我们如何使用Cookies</span></small>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#disclaimer">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <strong><span class="en">Disclaimer</span><span class="zh" style="display: none;">免责声明</span></strong><br>
+                                <small style="opacity: 0.7;"><span class="en">Legal limitations and notices</span><span class="zh" style="display: none;">法律限制和声明</span></small>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Privacy Policy Section -->
+            <div id="privacy" class="legal-section">
+                <h2>
+                    <i class="fas fa-shield-alt"></i>
+                    <span class="en">Privacy Policy</span>
+                    <span class="zh" style="display: none;">隐私政策</span>
+                </h2>
+
+                <div class="highlight-box">
+                    <p style="margin: 0; font-size: 1.05rem;">
+                        <strong>
+                            <span class="en">At York Region Caring Lions Club, we are committed to protecting your privacy and ensuring the security of your personal information.</span>
+                            <span class="zh" style="display: none;">在加拿大关爱狮子会，我们致力于保护您的隐私并确保您个人信息的安全。</span>
+                        </strong>
+                    </p>
+                </div>
+
+                <h3><span class="en">1. Information We Collect</span><span class="zh" style="display: none;">1. 我们收集的信息</span></h3>
+                <p class="en">We collect information that you provide directly to us when you:</p>
+                <p class="zh" style="display: none;">当您进行以下操作时，我们会收集您直接提供的信息：</p>
+                <ul>
+                    <li><span class="en">Register as a volunteer or member</span><span class="zh" style="display: none;">注册成为志愿者或会员</span></li>
+                    <li><span class="en">Make a donation or register your donation intent</span><span class="zh" style="display: none;">进行捐款或登记捐款意向</span></li>
+                    <li><span class="en">Contact us through our website forms</span><span class="zh" style="display: none;">通过我们的网站表单联系我们</span></li>
+                    <li><span class="en">Subscribe to our newsletter or communications</span><span class="zh" style="display: none;">订阅我们的通讯或资讯</span></li>
+                    <li><span class="en">Register for events or programs</span><span class="zh" style="display: none;">注册参加活动或项目</span></li>
+                </ul>
+
+                <p class="en">This information may include:</p>
+                <p class="zh" style="display: none;">这些信息可能包括：</p>
+                <ul>
+                    <li><span class="en"><strong>Personal identifiers:</strong> Name, email address, phone number, mailing address</span><span class="zh" style="display: none;"><strong>个人身份信息：</strong>姓名、电子邮件地址、电话号码、邮寄地址</span></li>
+                    <li><span class="en"><strong>Donation information:</strong> Donation amounts, payment methods, frequency preferences</span><span class="zh" style="display: none;"><strong>捐款信息：</strong>捐款金额、支付方式、频率偏好</span></li>
+                    <li><span class="en"><strong>Volunteer interests:</strong> Areas of interest, availability, skills, and experience</span><span class="zh" style="display: none;"><strong>志愿服务兴趣：</strong>兴趣领域、可用时间、技能和经验</span></li>
+                    <li><span class="en"><strong>Communications:</strong> Any messages, inquiries, or feedback you provide</span><span class="zh" style="display: none;"><strong>通讯内容：</strong>您提供的任何消息、咨询或反馈</span></li>
+                </ul>
+
+                <h3><span class="en">2. How We Use Your Information</span><span class="zh" style="display: none;">2. 我们如何使用您的信息</span></h3>
+                <p class="en">We use the information we collect for legitimate organizational purposes, including:</p>
+                <p class="zh" style="display: none;">我们将收集的信息用于合法的组织目的，包括：</p>
+                <ul>
+                    <li><span class="en">Process donations and issue official tax receipts (as required by Canadian tax law)</span><span class="zh" style="display: none;">处理捐款并签发官方税务收据（根据加拿大税法要求）</span></li>
+                    <li><span class="en">Coordinate volunteer activities, events, and training programs</span><span class="zh" style="display: none;">协调志愿者活动、事件和培训项目</span></li>
+                    <li><span class="en">Respond to your inquiries, requests, and provide customer support</span><span class="zh" style="display: none;">回应您的咨询、请求并提供客户支持</span></li>
+                    <li><span class="en">Send updates about our programs, events, and community impact (with your consent)</span><span class="zh" style="display: none;">发送有关我们项目、活动和社区影响的更新（经您同意）</span></li>
+                    <li><span class="en">Improve our website, services, and user experience</span><span class="zh" style="display: none;">改进我们的网站、服务和用户体验</span></li>
+                    <li><span class="en">Comply with legal obligations and protect our rights</span><span class="zh" style="display: none;">遵守法律义务并保护我们的权利</span></li>
+                    <li><span class="en">Maintain accurate records for Lions Clubs International reporting</span><span class="zh" style="display: none;">维护准确记录以向国际狮子会报告</span></li>
+                </ul>
+
+                <h3><span class="en">3. Information Sharing and Disclosure</span><span class="zh" style="display: none;">3. 信息共享和披露</span></h3>
+                <div class="info-box">
+                    <h3 style="margin-top: 0;"><i class="fas fa-lock" style="margin-right: 0.5rem;"></i><span class="en">We Do NOT Sell Your Information</span><span class="zh" style="display: none;">我们不会出售您的信息</span></h3>
+                    <p class="en">York Region Caring Lions Club will NEVER sell, trade, or rent your personal information to third parties for commercial purposes.</p>
+                    <p class="zh" style="display: none;">加拿大关爱狮子会绝不会出于商业目的出售、交易或出租您的个人信息给第三方。</p>
+                </div>
+
+                <p class="en">We may share your information only in the following limited circumstances:</p>
+                <p class="zh" style="display: none;">我们只会在以下有限情况下共享您的信息：</p>
+                <ul>
+                    <li><span class="en"><strong>Service Providers:</strong> With trusted service providers who assist us in operating our website, processing donations, or conducting our programs (e.g., CCBONLINE Inc. for technical support)</span><span class="zh" style="display: none;"><strong>服务提供商：</strong>与协助我们运营网站、处理捐款或开展项目的可信服务提供商（例如，CCBONLINE Inc.提供技术支持）</span></li>
+                    <li><span class="en"><strong>Lions Clubs International:</strong> For membership registration, reporting, and coordination purposes as required by our affiliation</span><span class="zh" style="display: none;"><strong>国际狮子会：</strong>根据我们的隶属关系，用于会员注册、报告和协调目的</span></li>
+                    <li><span class="en"><strong>Legal Requirements:</strong> When required by law, court order, or to protect rights, property, and safety</span><span class="zh" style="display: none;"><strong>法律要求：</strong>在法律要求、法院命令或保护权利、财产和安全时</span></li>
+                    <li><span class="en"><strong>With Your Consent:</strong> When you have explicitly authorized us to share your information</span><span class="zh" style="display: none;"><strong>经您同意：</strong>当您明确授权我们共享您的信息时</span></li>
+                </ul>
+
+                <h3><span class="en">4. Data Security</span><span class="zh" style="display: none;">4. 数据安全</span></h3>
+                <p class="en">We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+                <p class="zh" style="display: none;">我们实施适当的技术和组织安全措施，以保护您的个人信息免遭未经授权的访问、更改、披露或破坏。这些措施包括：</p>
+                <ul>
+                    <li><span class="en">Secure data transmission using industry-standard encryption (HTTPS/SSL)</span><span class="zh" style="display: none;">使用行业标准加密的安全数据传输（HTTPS/SSL）</span></li>
+                    <li><span class="en">Regular security audits and vulnerability assessments</span><span class="zh" style="display: none;">定期安全审计和漏洞评估</span></li>
+                    <li><span class="en">Access controls and authentication for administrative functions</span><span class="zh" style="display: none;">管理功能的访问控制和身份验证</span></li>
+                    <li><span class="en">Regular backups and disaster recovery procedures</span><span class="zh" style="display: none;">定期备份和灾难恢复程序</span></li>
+                </ul>
+
+                <p class="en">However, no internet transmission is 100% secure. While we strive to protect your personal information, we cannot guarantee absolute security.</p>
+                <p class="zh" style="display: none;">但是，没有任何互联网传输是100%安全的。虽然我们努力保护您的个人信息，但我们无法保证绝对安全。</p>
+
+                <h3><span class="en">5. Your Rights (Under PIPEDA)</span><span class="zh" style="display: none;">5. 您的权利（根据PIPEDA）</span></h3>
+                <p class="en">Under Canada's Personal Information Protection and Electronic Documents Act (PIPEDA), you have the following rights:</p>
+                <p class="zh" style="display: none;">根据加拿大个人信息保护和电子文件法（PIPEDA），您拥有以下权利：</p>
+                <ul>
+                    <li><span class="en"><strong>Access:</strong> Request access to your personal information we hold</span><span class="zh" style="display: none;"><strong>访问：</strong>请求访问我们持有的您的个人信息</span></li>
+                    <li><span class="en"><strong>Correction:</strong> Request correction of inaccurate or incomplete information</span><span class="zh" style="display: none;"><strong>更正：</strong>请求更正不准确或不完整的信息</span></li>
+                    <li><span class="en"><strong>Deletion:</strong> Request deletion of your personal information (subject to legal requirements)</span><span class="zh" style="display: none;"><strong>删除：</strong>请求删除您的个人信息（受法律要求限制）</span></li>
+                    <li><span class="en"><strong>Opt-Out:</strong> Unsubscribe from marketing communications at any time</span><span class="zh" style="display: none;"><strong>选择退出：</strong>随时取消订阅营销通讯</span></li>
+                    <li><span class="en"><strong>Portability:</strong> Request a copy of your data in a portable format</span><span class="zh" style="display: none;"><strong>可移植性：</strong>请求以可移植格式获取您的数据副本</span></li>
+                    <li><span class="en"><strong>Complaint:</strong> Lodge a complaint with the Privacy Commissioner of Canada if you believe your rights have been violated</span><span class="zh" style="display: none;"><strong>投诉：</strong>如果您认为您的权利受到侵犯，可向加拿大隐私专员提出投诉</span></li>
+                </ul>
+
+                <p class="en">To exercise any of these rights, please contact us at <a href="mailto:love521org@gmail.com" style="color: var(--primary-color); font-weight: 600;">love521org@gmail.com</a> or call <a href="tel:+14168328158" style="color: var(--primary-color); font-weight: 600;">+1 (416) 832-8158</a>.</p>
+                <p class="zh" style="display: none;">要行使这些权利中的任何一项，请通过<a href="mailto:love521org@gmail.com" style="color: var(--primary-color); font-weight: 600;">love521org@gmail.com</a>联系我们或致电<a href="tel:+14168328158" style="color: var(--primary-color); font-weight: 600;">+1 (416) 832-8158</a>。</p>
+
+                <h3><span class="en">6. Data Retention</span><span class="zh" style="display: none;">6. 数据保留</span></h3>
+                <p class="en">We retain your personal information only as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required or permitted by law. Donation records are retained for 7 years as required by Canadian tax law.</p>
+                <p class="zh" style="display: none;">我们仅在必要时保留您的个人信息，以实现本政策中概述的目的，除非法律要求或允许更长的保留期限。根据加拿大税法要求，捐款记录保留7年。</p>
+
+                <h3><span class="en">7. Children's Privacy</span><span class="zh" style="display: none;">7. 儿童隐私</span></h3>
+                <p class="en">Our website is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately, and we will delete such information from our records.</p>
+                <p class="zh" style="display: none;">我们的网站不适用于13岁以下的儿童。我们不会故意收集13岁以下儿童的个人信息。如果您是父母或监护人，并认为您的孩子向我们提供了个人信息，请立即联系我们，我们将从我们的记录中删除此类信息。</p>
+
+                <h3><span class="en">8. Changes to This Privacy Policy</span><span class="zh" style="display: none;">8. 本隐私政策的变更</span></h3>
+                <p class="en">We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any material changes by posting the updated policy on this page with a new "Effective Date." We encourage you to review this policy periodically.</p>
+                <p class="zh" style="display: none;">我们可能会不时更新本隐私政策，以反映我们实践或法律要求的变化。我们将通过在此页面上发布更新的政策和新的"生效日期"来通知您任何重大更改。我们鼓励您定期查看本政策。</p>
+            </div>
+
+            <!-- Terms of Use Section -->
+            <div id="terms" class="legal-section">
+                <h2>
+                    <i class="fas fa-file-contract"></i>
+                    <span class="en">Terms of Use</span>
+                    <span class="zh" style="display: none;">使用条款</span>
+                </h2>
+
+                <h3><span class="en">1. Acceptance of Terms</span><span class="zh" style="display: none;">1. 接受条款</span></h3>
+                <p class="en">By accessing and using the York Region Caring Lions Club website (<a href="https://love520.org" style="color: var(--primary-color);">love520.org</a>), you accept and agree to be bound by these Terms of Use and our Privacy Policy. If you do not agree with these terms, please do not use our website.</p>
+                <p class="zh" style="display: none;">通过访问和使用加拿大关爱狮子会网站（<a href="https://love520.org" style="color: var(--primary-color);">love520.org</a>），您接受并同意受这些使用条款和我们的隐私政策的约束。如果您不同意这些条款，请不要使用我们的网站。</p>
+
+                <h3><span class="en">2. Acceptable Use</span><span class="zh" style="display: none;">2. 可接受的使用</span></h3>
+                <p class="en">You agree to use this website only for lawful purposes and in a way that does not:</p>
+                <p class="zh" style="display: none;">您同意仅出于合法目的使用本网站，并且不得：</p>
+                <ul>
+                    <li><span class="en">Infringe the rights of others or restrict their use and enjoyment of the website</span><span class="zh" style="display: none;">侵犯他人权利或限制他们对网站的使用和享受</span></li>
+                    <li><span class="en">Transmit any unlawful, harmful, threatening, abusive, or defamatory content</span><span class="zh" style="display: none;">传输任何非法、有害、威胁性、辱骂性或诽谤性内容</span></li>
+                    <li><span class="en">Attempt to gain unauthorized access to our systems or networks</span><span class="zh" style="display: none;">试图未经授权访问我们的系统或网络</span></li>
+                    <li><span class="en">Use automated systems to collect data without our written permission</span><span class="zh" style="display: none;">未经我们书面许可使用自动化系统收集数据</span></li>
+                </ul>
+
+                <h3><span class="en">3. Intellectual Property</span><span class="zh" style="display: none;">3. 知识产权</span></h3>
+                <p class="en">All content on this website, including but not limited to text, graphics, logos, images, photographs, videos, and software, is the property of York Region Caring Lions Club, Lions Clubs International, or their respective content suppliers, and is protected by Canadian and international copyright laws.</p>
+                <p class="zh" style="display: none;">本网站上的所有内容，包括但不限于文本、图形、徽标、图像、照片、视频和软件，均为加拿大关爱狮子会、国际狮子会或其各自内容供应商的财产，并受加拿大和国际版权法保护。</p>
+
+                <p class="en">You may view, download, and print content for personal, non-commercial use only. You may not reproduce, distribute, modify, or create derivative works without our express written permission.</p>
+                <p class="zh" style="display: none;">您只能出于个人、非商业用途查看、下载和打印内容。未经我们明确书面许可，您不得复制、分发、修改或创建衍生作品。</p>
+
+                <h3><span class="en">4. Donations and Payments</span><span class="zh" style="display: none;">4. 捐款和付款</span></h3>
+                <p class="en">All donations to York Region Caring Lions Club are:</p>
+                <p class="zh" style="display: none;">对加拿大关爱狮子会的所有捐款均为：</p>
+                <ul>
+                    <li><span class="en"><strong>Voluntary:</strong> Made at your own discretion</span><span class="zh" style="display: none;"><strong>自愿：</strong>根据您自己的判断</span></li>
+                    <li><span class="en"><strong>Non-refundable:</strong> Unless required by applicable law</span><span class="zh" style="display: none;"><strong>不可退款：</strong>除非适用法律要求</span></li>
+                    <li><span class="en"><strong>Tax-deductible:</strong> Official tax receipts will be issued for eligible donations in accordance with Canadian tax laws</span><span class="zh" style="display: none;"><strong>可抵税：</strong>将根据加拿大税法为符合条件的捐款开具官方税务收据</span></li>
+                </ul>
+
+                <p class="en">Our donation page processes donation <strong>intent registration</strong> only. Our team will contact you within 24 hours with payment instructions for e-Transfer, cheque, or cash donations.</p>
+                <p class="zh" style="display: none;">我们的捐款页面仅处理捐款<strong>意向登记</strong>。我们的团队将在24小时内与您联系，提供e-Transfer、支票或现金捐款的支付说明。</p>
+
+                <h3><span class="en">5. External Links</span><span class="zh" style="display: none;">5. 外部链接</span></h3>
+                <p class="en">Our website may contain links to third-party websites, including Lions Clubs International (<a href="https://www.lionsclubs.org" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">lionsclubs.org</a>) and CCBONLINE Inc. (<a href="https://www.ccbonline.ca" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">ccbonline.ca</a>). We are not responsible for the content, privacy policies, or practices of these external sites. Inclusion of any link does not imply endorsement.</p>
+                <p class="zh" style="display: none;">我们的网站可能包含指向第三方网站的链接，包括国际狮子会（<a href="https://www.lionsclubs.org" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">lionsclubs.org</a>）和CCBONLINE Inc.（<a href="https://www.ccbonline.ca" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">ccbonline.ca</a>）。我们对这些外部网站的内容、隐私政策或做法不承担责任。包含任何链接并不意味着认可。</p>
+
+                <h3><span class="en">6. Limitation of Liability</span><span class="zh" style="display: none;">6. 责任限制</span></h3>
+                <p class="en">To the fullest extent permitted by law, York Region Caring Lions Club shall not be liable for any direct, indirect, incidental, consequential, special, or punitive damages arising from:</p>
+                <p class="zh" style="display: none;">在法律允许的最大范围内，加拿大关爱狮子会对以下原因引起的任何直接、间接、附带、后果性、特殊或惩罚性损害不承担责任：</p>
+                <ul>
+                    <li><span class="en">Your use of or inability to use this website</span><span class="zh" style="display: none;">您使用或无法使用本网站</span></li>
+                    <li><span class="en">Errors, omissions, or inaccuracies in website content</span><span class="zh" style="display: none;">网站内容中的错误、遗漏或不准确</span></li>
+                    <li><span class="en">Unauthorized access to or alteration of your data</span><span class="zh" style="display: none;">未经授权访问或更改您的数据</span></li>
+                    <li><span class="en">Statements or conduct of any third party on the website</span><span class="zh" style="display: none;">网站上任何第三方的声明或行为</span></li>
+                </ul>
+
+                <h3><span class="en">7. Indemnification</span><span class="zh" style="display: none;">7. 赔偿</span></h3>
+                <p class="en">You agree to indemnify, defend, and hold harmless York Region Caring Lions Club, its officers, directors, volunteers, and affiliates from any claims, losses, damages, liabilities, and expenses arising from your use of the website or violation of these Terms of Use.</p>
+                <p class="zh" style="display: none;">您同意赔偿、辩护并使加拿大关爱狮子会及其高级职员、董事、志愿者和关联公司免受因您使用网站或违反这些使用条款而产生的任何索赔、损失、损害、责任和费用的损害。</p>
+
+                <h3><span class="en">8. Governing Law</span><span class="zh" style="display: none;">8. 适用法律</span></h3>
+                <p class="en">These Terms of Use are governed by and construed in accordance with the laws of the Province of Ontario and the federal laws of Canada applicable therein. Any disputes shall be subject to the exclusive jurisdiction of the courts of Ontario.</p>
+                <p class="zh" style="display: none;">这些使用条款受安大略省法律和适用的加拿大联邦法律管辖和解释。任何争议应受安大略省法院的专属管辖。</p>
+
+                <h3><span class="en">9. Modifications to Terms</span><span class="zh" style="display: none;">9. 条款修改</span></h3>
+                <p class="en">We reserve the right to modify these Terms of Use at any time without prior notice. Changes will be effective immediately upon posting on this page. Your continued use of the website after changes are posted constitutes your acceptance of the revised terms.</p>
+                <p class="zh" style="display: none;">我们保留随时修改这些使用条款的权利，无需事先通知。更改将在本页面发布后立即生效。在发布更改后您继续使用网站即表示您接受修订后的条款。</p>
+            </div>
+
+            <!-- Cookie Policy Section -->
+            <div id="cookies" class="legal-section">
+                <h2>
+                    <i class="fas fa-cookie-bite"></i>
+                    <span class="en">Cookie Policy</span>
+                    <span class="zh" style="display: none;">Cookie政策</span>
+                </h2>
+
+                <h3><span class="en">What Are Cookies?</span><span class="zh" style="display: none;">什么是Cookie？</span></h3>
+                <p class="en">Cookies are small text files that are placed on your device (computer, tablet, or mobile phone) when you visit our website. They help us provide you with a better, faster, and safer experience by remembering your preferences and improving website functionality.</p>
+                <p class="zh" style="display: none;">Cookie是当您访问我们的网站时放置在您设备（计算机、平板电脑或手机）上的小文本文件。它们通过记住您的偏好和改进网站功能来帮助我们为您提供更好、更快、更安全的体验。</p>
+
+                <h3><span class="en">Types of Cookies We Use</span><span class="zh" style="display: none;">我们使用的Cookie类型</span></h3>
+                
+                <div style="margin: 2rem 0;">
+                    <div style="background: #f8f9fa; padding: 1.5rem; border-left: 4px solid #4CAF50; margin-bottom: 1rem; border-radius: 8px;">
+                        <h4 style="margin-top: 0; color: #4CAF50;">
+                            <i class="fas fa-cog" style="margin-right: 0.5rem;"></i>
+                            <span class="en">1. Essential Cookies (Required)</span>
+                            <span class="zh" style="display: none;">1. 必要Cookie（必需）</span>
+                        </h4>
+                        <p class="en"><strong>Purpose:</strong> Enable basic website functions such as page navigation, secure access, and form submission.</p>
+                        <p class="zh" style="display: none;"><strong>目的：</strong>启用基本网站功能，如页面导航、安全访问和表单提交。</p>
+                        <p><strong><span class="en">Example:</span><span class="zh" style="display: none;">示例：</span></strong> <span class="en">Session identifiers, security tokens</span><span class="zh" style="display: none;">会话标识符、安全令牌</span></p>
+                        <p><strong><span class="en">Can be disabled:</span><span class="zh" style="display: none;">是否可禁用：</span></strong> <span class="en">No (website will not function properly)</span><span class="zh" style="display: none;">否（网站将无法正常运行）</span></p>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 1.5rem; border-left: 4px solid #2196F3; margin-bottom: 1rem; border-radius: 8px;">
+                        <h4 style="margin-top: 0; color: #2196F3;">
+                            <i class="fas fa-sliders-h" style="margin-right: 0.5rem;"></i>
+                            <span class="en">2. Preference Cookies (Optional)</span>
+                            <span class="zh" style="display: none;">2. 偏好Cookie（可选）</span>
+                        </h4>
+                        <p class="en"><strong>Purpose:</strong> Remember your language preferences, display settings, and other customizations.</p>
+                        <p class="zh" style="display: none;"><strong>目的：</strong>记住您的语言偏好、显示设置和其他自定义设置。</p>
+                        <p><strong><span class="en">Example:</span><span class="zh" style="display: none;">示例：</span></strong> <span class="en">Language selection (EN/中文), font size preferences</span><span class="zh" style="display: none;">语言选择（EN/中文）、字体大小偏好</span></p>
+                        <p><strong><span class="en">Duration:</span><span class="zh" style="display: none;">持续时间：</span></strong> <span class="en">Up to 1 year</span><span class="zh" style="display: none;">最多1年</span></p>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 1.5rem; border-left: 4px solid #FF9800; margin-bottom: 1rem; border-radius: 8px;">
+                        <h4 style="margin-top: 0; color: #FF9800;">
+                            <i class="fas fa-chart-line" style="margin-right: 0.5rem;"></i>
+                            <span class="en">3. Analytics Cookies (Optional)</span>
+                            <span class="zh" style="display: none;">3. 分析Cookie（可选）</span>
+                        </h4>
+                        <p class="en"><strong>Purpose:</strong> Help us understand how visitors use our website so we can improve user experience.</p>
+                        <p class="zh" style="display: none;"><strong>目的：</strong>帮助我们了解访问者如何使用我们的网站，以便我们改进用户体验。</p>
+                        <p><strong><span class="en">Data collected:</span><span class="zh" style="display: none;">收集的数据：</span></strong> <span class="en">Pages visited, time spent, browser type, device type (anonymized)</span><span class="zh" style="display: none;">访问的页面、停留时间、浏览器类型、设备类型（匿名化）</span></p>
+                        <p><strong><span class="en">Third-party:</span><span class="zh" style="display: none;">第三方：</span></strong> <span class="en">May use Google Analytics (if implemented)</span><span class="zh" style="display: none;">可能使用Google Analytics（如果实施）</span></p>
+                    </div>
+                </div>
+
+                <h3><span class="en">Managing Cookies</span><span class="zh" style="display: none;">管理Cookie</span></h3>
+                <p class="en">You have several options to manage or disable cookies:</p>
+                <p class="zh" style="display: none;">您有多种选项来管理或禁用Cookie：</p>
+
+                <ul>
+                    <li>
+                        <strong><span class="en">Browser Settings:</span><span class="zh" style="display: none;">浏览器设置：</span></strong>
+                        <span class="en">Most browsers allow you to block or delete cookies through their settings menu. Please consult your browser's help section for instructions.</span>
+                        <span class="zh" style="display: none;">大多数浏览器允许您通过其设置菜单阻止或删除Cookie。请查阅浏览器的帮助部分以获取说明。</span>
+                    </li>
+                    <li>
+                        <strong><span class="en">Opt-Out Links:</span><span class="zh" style="display: none;">选择退出链接：</span></strong>
+                        <span class="en">You can opt out of Google Analytics by visiting <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">Google Analytics Opt-out Browser Add-on</a></span>
+                        <span class="zh" style="display: none;">您可以通过访问<a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">Google Analytics选择退出浏览器插件</a>来选择退出Google Analytics</span>
+                    </li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p style="margin: 0;">
+                        <i class="fas fa-exclamation-circle" style="margin-right: 0.5rem; color: var(--secondary-color);"></i>
+                        <strong><span class="en">Important:</span><span class="zh" style="display: none;">重要提示：</span></strong>
+                        <span class="en">Disabling cookies may affect the functionality of our website. Some features may not work properly, and your preferences will not be saved.</span>
+                        <span class="zh" style="display: none;">禁用Cookie可能会影响我们网站的功能。某些功能可能无法正常工作，您的偏好设置将不会被保存。</span>
+                    </p>
+                </div>
+
+                <h3><span class="en">Cookie Consent</span><span class="zh" style="display: none;">Cookie同意</span></h3>
+                <p class="en">By continuing to use our website, you consent to our use of cookies as described in this policy. We comply with Canada's Anti-Spam Legislation (CASL) and other applicable privacy laws.</p>
+                <p class="zh" style="display: none;">继续使用我们的网站，即表示您同意我们按本政策所述使用Cookie。我们遵守加拿大反垃圾邮件法（CASL）和其他适用的隐私法。</p>
+            </div>
+
+            <!-- Disclaimer Section -->
+            <div id="disclaimer" class="legal-section">
+                <h2>
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span class="en">Disclaimer</span>
+                    <span class="zh" style="display: none;">免责声明</span>
+                </h2>
+
+                <h3><span class="en">1. Information Accuracy</span><span class="zh" style="display: none;">1. 信息准确性</span></h3>
+                <p class="en">While we strive to provide accurate and up-to-date information on our website, we make no representations or warranties of any kind, express or implied, regarding the accuracy, reliability, completeness, or timeliness of any information, content, or materials on this website.</p>
+                <p class="zh" style="display: none;">虽然我们努力在我们的网站上提供准确和最新的信息，但我们不对本网站上任何信息、内容或材料的准确性、可靠性、完整性或及时性做出任何明示或暗示的陈述或保证。</p>
+
+                <h3><span class="en">2. No Warranty</span><span class="zh" style="display: none;">2. 无担保</span></h3>
+                <p class="en">This website and all content are provided "AS IS" and "AS AVAILABLE" without any warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+                <p class="zh" style="display: none;">本网站和所有内容均按"原样"和"可用"提供，不提供任何明示或暗示的担保，包括但不限于适销性、特定用途适用性或不侵权的担保。</p>
+
+                <h3><span class="en">3. Limitation of Liability</span><span class="zh" style="display: none;">3. 责任限制</span></h3>
+                <p class="en">To the maximum extent permitted by applicable law, York Region Caring Lions Club, its officers, directors, volunteers, employees, and affiliates shall not be liable for any:</p>
+                <p class="zh" style="display: none;">在适用法律允许的最大范围内，加拿大关爱狮子会及其高级职员、董事、志愿者、员工和关联公司对以下内容不承担责任：</p>
+                <ul>
+                    <li><span class="en">Direct, indirect, incidental, special, consequential, or punitive damages</span><span class="zh" style="display: none;">直接、间接、附带、特殊、后果性或惩罚性损害</span></li>
+                    <li><span class="en">Loss of profits, revenue, data, or use</span><span class="zh" style="display: none;">利润、收入、数据或使用的损失</span></li>
+                    <li><span class="en">Business interruption or loss of business opportunities</span><span class="zh" style="display: none;">业务中断或商业机会损失</span></li>
+                    <li><span class="en">Damages arising from your use or inability to use this website</span><span class="zh" style="display: none;">因您使用或无法使用本网站而产生的损害</span></li>
+                </ul>
+
+                <h3><span class="en">4. Medical and Professional Advice Disclaimer</span><span class="zh" style="display: none;">4. 医疗和专业建议免责声明</span></h3>
+                <div class="info-box" style="border-color: #f44336;">
+                    <h3 style="margin-top: 0; color: #f44336;"><i class="fas fa-heartbeat" style="margin-right: 0.5rem;"></i><span class="en">Important Medical Disclaimer</span><span class="zh" style="display: none;">重要医疗免责声明</span></h3>
+                    <p class="en">Information provided on this website, including first-aid training information, CPR techniques, and emergency response procedures, is for <strong>general educational purposes only</strong> and should NOT replace:</p>
+                    <p class="zh" style="display: none;">本网站提供的信息，包括急救培训信息、心肺复苏技术和紧急响应程序，仅用于<strong>一般教育目的</strong>，不应取代：</p>
+                    <ul style="margin-bottom: 0;">
+                        <li><span class="en">Professional medical advice, diagnosis, or treatment</span><span class="zh" style="display: none;">专业医疗建议、诊断或治疗</span></li>
+                        <li><span class="en">Certified first-aid and CPR training courses</span><span class="zh" style="display: none;">认证的急救和心肺复苏培训课程</span></li>
+                        <li><span class="en">Emergency medical services (always call 911 in emergencies)</span><span class="zh" style="display: none;">紧急医疗服务（紧急情况下请始终拨打911）</span></li>
+                    </ul>
+                </div>
+
+                <p class="en">Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. Never disregard professional medical advice or delay seeking it because of information you have read on this website.</p>
+                <p class="zh" style="display: none;">如果您对医疗状况有任何疑问，请务必寻求您的医生或其他合格医疗保健提供者的建议。切勿因您在本网站上阅读的信息而忽视专业医疗建议或延迟寻求医疗建议。</p>
+
+                <h3><span class="en">5. External Links and Third-Party Content</span><span class="zh" style="display: none;">5. 外部链接和第三方内容</span></h3>
+                <p class="en">Our website may contain links to external websites and third-party content. We are not responsible for:</p>
+                <p class="zh" style="display: none;">我们的网站可能包含指向外部网站和第三方内容的链接。我们不对以下内容负责：</p>
+                <ul>
+                    <li><span class="en">The content, accuracy, or opinions expressed on linked websites</span><span class="zh" style="display: none;">链接网站上表达的内容、准确性或观点</span></li>
+                    <li><span class="en">Privacy practices or policies of external sites</span><span class="zh" style="display: none;">外部网站的隐私做法或政策</span></li>
+                    <li><span class="en">Damages or losses incurred from visiting linked websites</span><span class="zh" style="display: none;">访问链接网站而产生的损害或损失</span></li>
+                </ul>
+                <p class="en">Inclusion of any link does not imply endorsement, approval, or recommendation by York Region Caring Lions Club.</p>
+                <p class="zh" style="display: none;">包含任何链接并不意味着加拿大关爱狮子会的认可、批准或推荐。</p>
+
+                <h3><span class="en">6. Event and Program Participation</span><span class="zh" style="display: none;">6. 活动和项目参与</span></h3>
+                <p class="en">Participation in York Region Caring Lions Club events, programs, and volunteer activities is at your own risk. We recommend that participants:</p>
+                <p class="zh" style="display: none;">参加加拿大关爱狮子会的活动、项目和志愿者活动需自行承担风险。我们建议参与者：</p>
+                <ul>
+                    <li><span class="en">Consult with their healthcare provider before participating in physical activities</span><span class="zh" style="display: none;">在参加体育活动前咨询其医疗保健提供者</span></li>
+                    <li><span class="en">Follow all safety instructions and guidelines provided</span><span class="zh" style="display: none;">遵循提供的所有安全说明和指南</span></li>
+                    <li><span class="en">Maintain appropriate insurance coverage</span><span class="zh" style="display: none;">保持适当的保险覆盖</span></li>
+                    <li><span class="en">Notify event organizers of any medical conditions or limitations</span><span class="zh" style="display: none;">通知活动组织者任何医疗状况或限制</span></li>
+                </ul>
+
+                <h3><span class="en">7. Changes to Website Content</span><span class="zh" style="display: none;">7. 网站内容的更改</span></h3>
+                <p class="en">We reserve the right to modify, update, or discontinue any aspect of this website, including content, features, and functionality, at any time without prior notice. Event dates, program details, and other information are subject to change.</p>
+                <p class="zh" style="display: none;">我们保留随时修改、更新或终止本网站任何方面的权利，包括内容、功能和特性，无需事先通知。活动日期、项目详情和其他信息如有更改，恕不另行通知。</p>
+
+                <h3><span class="en">8. Jurisdiction</span><span class="zh" style="display: none;">8. 管辖权</span></h3>
+                <p class="en">This disclaimer shall be governed by and construed in accordance with the laws of the Province of Ontario and the federal laws of Canada applicable therein, without regard to conflicts of law principles.</p>
+                <p class="zh" style="display: none;">本免责声明应受安大略省法律和适用的加拿大联邦法律管辖和解释，不考虑法律冲突原则。</p>
+            </div>
+
+            <!-- Contact Section -->
+            <div style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); color: white; padding: 3rem; border-radius: 12px; margin-top: 4rem; text-align: center;">
+                <h3 style="margin-top: 0; font-size: 1.8rem;">
+                    <i class="fas fa-envelope" style="margin-right: 1rem;"></i>
+                    <span class="en">Questions About Our Policies?</span>
+                    <span class="zh" style="display: none;">对我们的政策有疑问？</span>
+                </h3>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
+                    <span class="en">If you have any questions about our Privacy Policy, Terms of Use, Cookie Policy, or other legal matters, please don't hesitate to contact us.</span>
+                    <span class="zh" style="display: none;">如果您对我们的隐私政策、使用条款、Cookie政策或其他法律事项有任何疑问，请随时与我们联系。</span>
+                </p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: left; margin-top: 2rem;">
+                    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 12px; backdrop-filter: blur(10px);">
+                        <i class="fas fa-envelope" style="font-size: 2rem; margin-bottom: 1rem; display: block;"></i>
+                        <strong style="display: block; margin-bottom: 0.5rem; font-size: 1.1rem;">
+                            <span class="en">Email Us</span>
+                            <span class="zh" style="display: none;">电子邮件</span>
+                        </strong>
+                        <a href="mailto:love521org@gmail.com" style="color: white; text-decoration: none; word-break: break-all;">love521org@gmail.com</a>
+                    </div>
+                    
+                    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 12px; backdrop-filter: blur(10px);">
+                        <i class="fas fa-phone" style="font-size: 2rem; margin-bottom: 1rem; display: block;"></i>
+                        <strong style="display: block; margin-bottom: 0.5rem; font-size: 1.1rem;">
+                            <span class="en">Call Us</span>
+                            <span class="zh" style="display: none;">电话</span>
+                        </strong>
+                        <a href="tel:+14168328158" style="color: white; text-decoration: none;">+1 (416) 832-8158</a>
+                    </div>
+                    
+                    <div style="background: rgba(255,255,255,0.15); padding: 1.5rem; border-radius: 12px; backdrop-filter: blur(10px);">
+                        <i class="fas fa-map-marker-alt" style="font-size: 2rem; margin-bottom: 1rem; display: block;"></i>
+                        <strong style="display: block; margin-bottom: 0.5rem; font-size: 1.1rem;">
+                            <span class="en">Visit Us</span>
+                            <span class="zh" style="display: none;">访问我们</span>
+                        </strong>
+                        <span>7181 Woodbine Ave<br>Markham, ON L3R 1A3<br>Canada</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.3);">
+                    <p style="margin: 0; font-size: 0.95rem; opacity: 0.9;">
+                        <i class="fas fa-clock" style="margin-right: 0.5rem;"></i>
+                        <span class="en">We typically respond to all inquiries within 24-48 hours.</span>
+                        <span class="zh" style="display: none;">我们通常会在24-48小时内回复所有咨询。</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">
+                        <span class="en">York Region Caring Lions Club</span>
+                        <span class="zh" style="display: none;">加拿大关爱狮子会</span>
+                    </h3>
+                    <p class="footer-text">
+                        <span class="en">Serving communities with compassion and dedication since 2015.</span>
+                        <span class="zh" style="display: none;">自2015年以来，用关爱和奉献服务社区。</span>
+                    </p>
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.1); border-radius: 8px; font-size: 0.9rem;">
+                        <i class="fas fa-globe" style="margin-right: 0.5rem; color: var(--secondary-color);"></i>
+                        <span class="en">Proud Member of<br><strong>Lions Clubs International</strong></span>
+                        <span class="zh" style="display: none;">国际狮子会自豪成员<br><strong>Lions Clubs International</strong></span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="en">Quick Links</span>
+                        <span class="zh" style="display: none;">快速链接</span>
+                    </h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html"><span class="en">About Us</span><span class="zh" style="display: none;">关于我们</span></a></li>
+                        <li><a href="programs.html"><span class="en">Programs</span><span class="zh" style="display: none;">项目活动</span></a></li>
+                        <li><a href="events.html"><span class="en">Events</span><span class="zh" style="display: none;">活动日历</span></a></li>
+                        <li><a href="gallery.html"><span class="en">Gallery</span><span class="zh" style="display: none;">照片墙</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="en">Get Involved</span>
+                        <span class="zh" style="display: none;">参与我们</span>
+                    </h4>
+                    <ul class="footer-links">
+                        <li><a href="joinus.html"><span class="en">Volunteer</span><span class="zh" style="display: none;">志愿服务</span></a></li>
+                        <li><a href="donate.html"><span class="en">Donate</span><span class="zh" style="display: none;">捐款支持</span></a></li>
+                        <li><a href="events.html"><span class="en">Upcoming Events</span><span class="zh" style="display: none;">近期活动</span></a></li>
+                        <li><a href="contact.html"><span class="en">Contact Us</span><span class="zh" style="display: none;">联系我们</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="en">Contact</span>
+                        <span class="zh" style="display: none;">联系方式</span>
+                    </h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 7181 Woodbine Ave, Markham, ON L3R 1A3</li>
+                        <li><i class="fas fa-phone"></i> +1 (416) 832-8158</li>
+                        <li><i class="fas fa-envelope"></i> love521org@gmail.com</li>
+                        <li><i class="fas fa-globe"></i> <a href="https://love520.org" style="color: inherit;">love520.org</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 York Region Caring Lions Club (加拿大关爱狮子会). 
+                    <span class="en">All rights reserved.</span>
+                    <span class="zh" style="display: none;">版权所有。</span>
+                    | 
+                    <a href="legal.html" style="color: var(--secondary-color); text-decoration: none; font-weight: 500;">
+                        <span class="en">Legal & Privacy</span>
+                        <span class="zh" style="display: none;">法律与隐私</span>
+                    </a>
+                </p>
+                <p style="margin-top: 0.75rem; font-size: 0.85rem; opacity: 0.8;">
+                    <span class="en">Website Development & Technical Support by</span>
+                    <span class="zh" style="display: none;">网站开发及技术支持</span>
+                    <a href="https://www.ccbonline.ca" target="_blank" rel="noopener noreferrer" style="color: var(--secondary-color); text-decoration: none; font-weight: 600; margin: 0 0.25rem;">
+                        CCBONLINE Inc.
+                    </a>
+                    | 
+                    <a href="mailto:support@ccbonline.ca" style="color: inherit; text-decoration: none; margin-left: 0.25rem;">
+                        <i class="fas fa-envelope" style="margin-right: 0.25rem;"></i>support@ccbonline.ca
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav-item">
+            <i class="fas fa-home"></i>
+            <span class="en">Home</span>
+            <span class="zh" style="display: none;">首页</span>
+        </a>
+        <a href="programs.html" class="bottom-nav-item">
+            <i class="fas fa-th-large"></i>
+            <span class="en">Programs</span>
+            <span class="zh" style="display: none;">项目</span>
+        </a>
+        <a href="events.html" class="bottom-nav-item">
+            <i class="fas fa-calendar"></i>
+            <span class="en">Events</span>
+            <span class="zh" style="display: none;">活动</span>
+        </a>
+        <a href="gallery.html" class="bottom-nav-item">
+            <i class="fas fa-images"></i>
+            <span class="en">Gallery</span>
+            <span class="zh" style="display: none;">相册</span>
+        </a>
+        <a href="contact.html" class="bottom-nav-item">
+            <i class="fas fa-envelope"></i>
+            <span class="en">Contact</span>
+            <span class="zh" style="display: none;">联系</span>
+        </a>
+    </nav>
+
+    <script src="js/main.js"></script>
+    <script src="js/enhancements.js"></script>
+    
+    <script>
+        // Back to Top Button
+        window.addEventListener('scroll', function() {
+            const backToTop = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Highlight active section in quick nav
+        const sections = document.querySelectorAll('.legal-section');
+        const navLinks = document.querySelectorAll('.quick-nav a');
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-section') === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

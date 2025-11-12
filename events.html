@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | York Region Caring Lions Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/enhancements.css">
+    <link rel="stylesheet" href="css/photo-optimization.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://page.gensparksite.com/v1/base64_upload/25b65288eea400a4e2bff05935808fb1" alt="York Region Caring Lions Club Logo" style="height: 50px; margin-right: 12px;">
+                <span class="logo-text">
+                    <span class="en">York Region Caring Lions Club</span>
+                    <span class="zh" style="display: none;">加拿大关爱狮子会</span>
+                </span>
+            </div>
+            <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-en="Home" data-zh="首页">Home</a></li>
+                <li><a href="about.html" data-en="About Us" data-zh="关于我们">About Us</a></li>
+                <li><a href="programs.html" data-en="Programs" data-zh="项目活动">Programs</a></li>
+                <li><a href="events.html" class="active" data-en="Events" data-zh="活动日历">Events</a></li>
+                <li><a href="gallery.html" data-en="Gallery" data-zh="照片墙">Gallery</a></li>
+                <li><a href="contact.html" data-en="Contact" data-zh="联系我们">Contact</a></li>
+                <li><a href="donate.html" class="btn-donate" data-en="Donate" data-zh="捐款支持">Donate</a></li>
+            </ul>
+            <button class="lang-switch" id="langSwitch">
+                <span class="en">中文</span>
+                <span class="zh" style="display: none;">EN</span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                <span class="en">Upcoming Events</span>
+                <span class="zh" style="display: none;">近期活动</span>
+            </h1>
+            <p class="page-subtitle">
+                <span class="en">Join us at our community events and make a difference</span>
+                <span class="zh" style="display: none;">参加我们的社区活动并做出改变</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <div class="container">
+            <!-- Dynamic events grid - populated by js/events-dynamic.js -->
+            <div class="events-grid">
+                <!-- Events will be loaded dynamically from the API -->
+                <!-- Loading state shown by default until JavaScript loads -->
+                <div class="events-loading" style="grid-column: 1 / -1; text-align: center; padding: 4rem 2rem;">
+                    <div class="loading-spinner" style="margin: 0 auto 1.5rem; width: 50px; height: 50px; border: 4px solid rgba(200, 16, 46, 0.2); border-top-color: var(--primary-color); border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                    <p style="font-size: 1.1rem; color: var(--text-gray);">
+                        <span class="en">Loading upcoming events...</span>
+                        <span class="zh" style="display: none;">正在加载活动信息...</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">
+                    <span class="en">Can't Find What You're Looking For?</span>
+                    <span class="zh" style="display: none;">找不到您要找的内容？</span>
+                </h2>
+                <p class="cta-subtitle">
+                    <span class="en">Contact us to learn about more opportunities or create custom volunteer experiences</span>
+                    <span class="zh" style="display: none;">联系我们了解更多机会或创建定制志愿者体验</span>
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-envelope"></i>
+                        <span class="en">Contact Us</span>
+                        <span class="zh" style="display: none;">联系我们</span>
+                    </a>
+                    <a href="joinus.html" class="btn btn-secondary btn-large">
+                        <i class="fas fa-user-plus"></i>
+                        <span class="en">Become a Volunteer</span>
+                        <span class="zh" style="display: none;">成为志愿者</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">
+                        <span class="en">York Region Caring Lions Club</span>
+                        <span class="zh" style="display: none;">加拿大关爱狮子会</span>
+                    </h3>
+                    <p class="footer-text">
+                        <span class="en">Serving communities with compassion and dedication since 2015.</span>
+                        <span class="zh" style="display: none;">自2015年以来，用关爱和奉献服务社区。</span>
+                    </p>
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.1); border-radius: 8px; font-size: 0.9rem;">
+                        <i class="fas fa-globe" style="margin-right: 0.5rem; color: var(--secondary-color);"></i>
+                        <span class="en">Proud Member of<br><strong>Lions Clubs International</strong></span>
+                        <span class="zh" style="display: none;">国际狮子会自豪成员<br><strong>Lions Clubs International</strong></span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="en">Quick Links</span>
+                        <span class="zh" style="display: none;">快速链接</span>
+                    </h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-en="About Us" data-zh="关于我们">About Us</a></li>
+                        <li><a href="programs.html" data-en="Programs" data-zh="项目活动">Programs</a></li>
+                        <li><a href="events.html" data-en="Events" data-zh="活动日历">Events</a></li>
+                        <li><a href="gallery.html" data-en="Gallery" data-zh="照片墙">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="en">Get Involved</span>
+                        <span class="zh" style="display: none;">参与我们</span>
+                    </h4>
+                    <ul class="footer-links">
+                        <li><a href="joinus.html" data-en="Volunteer" data-zh="志愿服务">Volunteer</a></li>
+                        <li><a href="donate.html" data-en="Donate" data-zh="捐款支持">Donate</a></li>
+                        <li><a href="events.html" data-en="Upcoming Events" data-zh="近期活动">Upcoming Events</a></li>
+                        <li><a href="contact.html" data-en="Contact Us" data-zh="联系我们">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="en">Contact</span>
+                        <span class="zh" style="display: none;">联系方式</span>
+                    </h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 7181 Woodbine Ave, Markham, ON L3R 1A3</li>
+                        <li><i class="fas fa-phone"></i> +1 (416) 832-8158</li>
+                        <li><i class="fas fa-envelope"></i> love521org@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 York Region Caring Lions Club (加拿大关爱狮子会). 
+                    <span class="en">All rights reserved.</span>
+                    <span class="zh" style="display: none;">版权所有。</span>
+                    | 
+                    <a href="legal.html" style="color: var(--secondary-color); text-decoration: none; font-weight: 500;">
+                        <span class="en">Legal & Privacy</span>
+                        <span class="zh" style="display: none;">法律与隐私</span>
+                    </a>
+                </p>
+                <p style="margin-top: 0.75rem; font-size: 0.85rem; opacity: 0.8;">
+                    <span class="en">Website Development & Technical Support by</span>
+                    <span class="zh" style="display: none;">网站开发及技术支持</span>
+                    <a href="https://www.ccbonline.ca" target="_blank" rel="noopener noreferrer" style="color: var(--secondary-color); text-decoration: none; font-weight: 600; margin: 0 0.25rem;">
+                        CCBONLINE Inc.
+                    </a>
+                    | 
+                    <a href="mailto:support@ccbonline.ca" style="color: inherit; text-decoration: none; margin-left: 0.25rem;">
+                        <i class="fas fa-envelope" style="margin-right: 0.25rem;"></i>support@ccbonline.ca
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav-item"><i class="fas fa-home"></i><span class="en">Home</span><span class="zh" style="display: none;">首页</span></a>
+        <a href="programs.html" class="bottom-nav-item"><i class="fas fa-th-large"></i><span class="en">Programs</span><span class="zh" style="display: none;">项目</span></a>
+        <a href="events.html" class="bottom-nav-item active"><i class="fas fa-calendar"></i><span class="en">Events</span><span class="zh" style="display: none;">活动</span></a>
+        <a href="joinus.html" class="bottom-nav-item"><i class="fas fa-user-plus"></i><span class="en">Join</span><span class="zh" style="display: none;">加入</span></a>
+        <a href="donate.html" class="bottom-nav-item"><i class="fas fa-donate"></i><span class="en">Donate</span><span class="zh" style="display: none;">捐款</span></a>
+    </nav>
+
+    <script src="js/main.js"></script>
+    <script src="js/enhancements.js"></script>
+    <script src="js/photo-effects.js"></script>
+    <script src="js/events-dynamic.js"></script>
+</body>
+</html>

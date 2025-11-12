@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | York Region Caring Lions Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/enhancements.css">
+    <link rel="stylesheet" href="css/photo-optimization.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://page.gensparksite.com/v1/base64_upload/25b65288eea400a4e2bff05935808fb1" alt="York Region Caring Lions Club Logo" style="height: 50px; margin-right: 12px;">
+                <span class="logo-text">
+                    <span class="en">York Region Caring Lions Club</span>
+                    <span class="zh" style="display: none;">加拿大关爱狮子会</span>
+                </span>
+            </div>
+            <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-en="Home" data-zh="首页">Home</a></li>
+                <li><a href="about.html" data-en="About Us" data-zh="关于我们">About Us</a></li>
+                <li><a href="programs.html" data-en="Programs" data-zh="项目活动">Programs</a></li>
+                <li><a href="events.html" data-en="Events" data-zh="活动日历">Events</a></li>
+                <li><a href="gallery.html" data-en="Gallery" data-zh="照片墙">Gallery</a></li>
+                <li><a href="contact.html" data-en="Contact" data-zh="联系我们">Contact</a></li>
+                <li><a href="donate.html" class="btn-donate" data-en="Donate" data-zh="捐款支持">Donate</a></li>
+            </ul>
+            <button class="lang-switch" id="langSwitch">
+                <span class="en">中文</span>
+                <span class="zh" style="display: none;">EN</span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                <span class="en">Become a Volunteer</span>
+                <span class="zh" style="display: none;">成为志愿者</span>
+            </h1>
+            <p class="page-subtitle">
+                <span class="en">Join our team and make a meaningful impact in your community</span>
+                <span class="zh" style="display: none;">加入我们的团队，为您的社区做出有意义的影响</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2 style="text-align: center; margin-bottom: 20px; font-family: var(--font-heading); color: var(--primary-color);">
+                    <span class="en">Volunteer Application</span>
+                    <span class="zh" style="display: none;">志愿者申请</span>
+                </h2>
+                <p style="text-align: center; margin-bottom: 40px; color: var(--text-gray);">
+                    <span class="en">Fill out the form below and we'll get back to you within 48 hours</span>
+                    <span class="zh" style="display: none;">填写下面的表格，我们将在48小时内回复您</span>
+                </p>
+
+                <form id="volunteerForm">
+                    <div class="form-group">
+                        <label for="fullName">
+                            <span class="en">Full Name *</span>
+                            <span class="zh" style="display: none;">全名 *</span>
+                        </label>
+                        <input type="text" id="fullName" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <span class="en">Email Address *</span>
+                            <span class="zh" style="display: none;">电子邮箱 *</span>
+                        </label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">
+                            <span class="en">Phone Number *</span>
+                            <span class="zh" style="display: none;">电话号码 *</span>
+                        </label>
+                        <input type="tel" id="phone" required placeholder="+1 (416) 555-0123">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">
+                            <span class="en">Age Group *</span>
+                            <span class="zh" style="display: none;">年龄组 *</span>
+                        </label>
+                        <select id="age" required>
+                            <option value="" data-en="Select age group" data-zh="选择年龄组">Select age group</option>
+                            <option value="under18" data-en="Under 18" data-zh="18岁以下">Under 18</option>
+                            <option value="18-25" data-en="18-25" data-zh="18-25岁">18-25</option>
+                            <option value="26-35" data-en="26-35" data-zh="26-35岁">26-35</option>
+                            <option value="36-50" data-en="36-50" data-zh="36-50岁">36-50</option>
+                            <option value="50plus" data-en="50+" data-zh="50岁以上">50+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <span class="en">Areas of Interest * (Select all that apply)</span>
+                            <span class="zh" style="display: none;">感兴趣的领域 *（选择所有适用项）</span>
+                        </label>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="interest1" name="interests" value="youth">
+                            <label for="interest1">
+                                <span class="en">Youth Development</span>
+                                <span class="zh" style="display: none;">青年发展</span>
+                            </label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="interest2" name="interests" value="community">
+                            <label for="interest2">
+                                <span class="en">Community Service</span>
+                                <span class="zh" style="display: none;">社区服务</span>
+                            </label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="interest3" name="interests" value="firstaid">
+                            <label for="interest3">
+                                <span class="en">First-Aid Training</span>
+                                <span class="zh" style="display: none;">急救培训</span>
+                            </label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="interest4" name="interests" value="education">
+                            <label for="interest4">
+                                <span class="en">Educational Support</span>
+                                <span class="zh" style="display: none;">教育支持</span>
+                            </label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="interest5" name="interests" value="events">
+                            <label for="interest5">
+                                <span class="en">Event Organization</span>
+                                <span class="zh" style="display: none;">活动组织</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="availability">
+                            <span class="en">Availability *</span>
+                            <span class="zh" style="display: none;">可用时间 *</span>
+                        </label>
+                        <select id="availability" required>
+                            <option value="" data-en="Select your availability" data-zh="选择您的可用时间">Select your availability</option>
+                            <option value="weekdays" data-en="Weekdays" data-zh="工作日">Weekdays</option>
+                            <option value="weekends" data-en="Weekends" data-zh="周末">Weekends</option>
+                            <option value="both" data-en="Both weekdays and weekends" data-zh="工作日和周末都可以">Both weekdays and weekends</option>
+                            <option value="flexible" data-en="Flexible schedule" data-zh="灵活时间">Flexible schedule</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hoursPerWeek">
+                            <span class="en">Hours Per Week</span>
+                            <span class="zh" style="display: none;">每周小时数</span>
+                        </label>
+                        <select id="hoursPerWeek">
+                            <option value="" data-en="Select hours per week" data-zh="选择每周小时数">Select hours per week</option>
+                            <option value="1-3" data-en="1-3 hours" data-zh="1-3小时">1-3 hours</option>
+                            <option value="4-6" data-en="4-6 hours" data-zh="4-6小时">4-6 hours</option>
+                            <option value="7-10" data-en="7-10 hours" data-zh="7-10小时">7-10 hours</option>
+                            <option value="10plus" data-en="10+ hours" data-zh="10小时以上">10+ hours</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">
+                            <span class="en">Relevant Skills & Experience</span>
+                            <span class="zh" style="display: none;">相关技能和经验</span>
+                        </label>
+                        <textarea id="skills" placeholder="Tell us about any relevant skills, experience, or qualifications..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivation">
+                            <span class="en">Why do you want to volunteer? *</span>
+                            <span class="zh" style="display: none;">您为什么想成为志愿者？*</span>
+                        </label>
+                        <textarea id="motivation" required placeholder="Share your motivation for joining our team..."></textarea>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="agreement" required>
+                        <label for="agreement">
+                            <span class="en">I agree to the volunteer terms and conditions and understand that a background check may be required *</span>
+                            <span class="zh" style="display: none;">我同意志愿者条款和条件，并理解可能需要进行背景调查 *</span>
+                        </label>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            <span class="en">Submit Application</span>
+                            <span class="zh" style="display: none;">提交申请</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">
+                    <span class="en">Questions About Volunteering?</span>
+                    <span class="zh" style="display: none;">有关于志愿服务的问题？</span>
+                </h2>
+                <p class="cta-subtitle">
+                    <span class="en">We're here to help! Reach out to our volunteer coordinator</span>
+                    <span class="zh" style="display: none;">我们在这里帮助您！联系我们的志愿者协调员</span>
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-envelope"></i>
+                        <span class="en">Contact Us</span>
+                        <span class="zh" style="display: none;">联系我们</span>
+                    </a>
+                    <a href="programs.html" class="btn btn-secondary btn-large">
+                        <i class="fas fa-info-circle"></i>
+                        <span class="en">Learn About Programs</span>
+                        <span class="zh" style="display: none;">了解项目</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">
+                        <span class="en">York Region Caring Lions Club</span>
+                        <span class="zh" style="display: none;">加拿大关爱狮子会</span>
+                    </h3>
+                    <p class="footer-text">
+                        <span class="en">Serving communities with compassion and dedication since 2015.</span>
+                        <span class="zh" style="display: none;">自2015年以来，用关爱和奉献服务社区。</span>
+                    </p>
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.1); border-radius: 8px; font-size: 0.9rem;">
+                        <i class="fas fa-globe" style="margin-right: 0.5rem; color: var(--secondary-color);"></i>
+                        <span class="en">Proud Member of<br><strong>Lions Clubs International</strong></span>
+                        <span class="zh" style="display: none;">国际狮子会自豪成员<br><strong>Lions Clubs International</strong></span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="en">Quick Links</span>
+                        <span class="zh" style="display: none;">快速链接</span>
+                    </h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-en="About Us" data-zh="关于我们">About Us</a></li>
+                        <li><a href="programs.html" data-en="Programs" data-zh="项目活动">Programs</a></li>
+                        <li><a href="events.html" data-en="Events" data-zh="活动日历">Events</a></li>
+                        <li><a href="gallery.html" data-en="Gallery" data-zh="照片墙">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="en">Get Involved</span>
+                        <span class="zh" style="display: none;">参与我们</span>
+                    </h4>
+                    <ul class="footer-links">
+                        <li><a href="joinus.html" data-en="Volunteer" data-zh="志愿服务">Volunteer</a></li>
+                        <li><a href="donate.html" data-en="Donate" data-zh="捐款支持">Donate</a></li>
+                        <li><a href="events.html" data-en="Upcoming Events" data-zh="近期活动">Upcoming Events</a></li>
+                        <li><a href="contact.html" data-en="Contact Us" data-zh="联系我们">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="en">Contact</span>
+                        <span class="zh" style="display: none;">联系方式</span>
+                    </h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 7181 Woodbine Ave, Markham, ON L3R 1A3</li>
+                        <li><i class="fas fa-phone"></i> +1 (416) 832-8158</li>
+                        <li><i class="fas fa-envelope"></i> love521org@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 York Region Caring Lions Club (加拿大关爱狮子会). 
+                    <span class="en">All rights reserved.</span>
+                    <span class="zh" style="display: none;">版权所有。</span>
+                    | 
+                    <a href="legal.html" style="color: var(--secondary-color); text-decoration: none; font-weight: 500;">
+                        <span class="en">Legal & Privacy</span>
+                        <span class="zh" style="display: none;">法律与隐私</span>
+                    </a>
+                </p>
+                <p style="margin-top: 0.75rem; font-size: 0.85rem; opacity: 0.8;">
+                    <span class="en">Website Development & Technical Support by</span>
+                    <span class="zh" style="display: none;">网站开发及技术支持</span>
+                    <a href="https://www.ccbonline.ca" target="_blank" rel="noopener noreferrer" style="color: var(--secondary-color); text-decoration: none; font-weight: 600; margin: 0 0.25rem;">
+                        CCBONLINE Inc.
+                    </a>
+                    | 
+                    <a href="mailto:support@ccbonline.ca" style="color: inherit; text-decoration: none; margin-left: 0.25rem;">
+                        <i class="fas fa-envelope" style="margin-right: 0.25rem;"></i>support@ccbonline.ca
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav-item"><i class="fas fa-home"></i><span class="en">Home</span><span class="zh" style="display: none;">首页</span></a>
+        <a href="programs.html" class="bottom-nav-item"><i class="fas fa-th-large"></i><span class="en">Programs</span><span class="zh" style="display: none;">项目</span></a>
+        <a href="events.html" class="bottom-nav-item"><i class="fas fa-calendar"></i><span class="en">Events</span><span class="zh" style="display: none;">活动</span></a>
+        <a href="joinus.html" class="bottom-nav-item active"><i class="fas fa-user-plus"></i><span class="en">Join</span><span class="zh" style="display: none;">加入</span></a>
+        <a href="donate.html" class="bottom-nav-item"><i class="fas fa-donate"></i><span class="en">Donate</span><span class="zh" style="display: none;">捐款</span></a>
+    </nav>
+
+    <script src="js/main.js"></script>
+    <script src="js/enhancements.js"></script>
+    <script src="js/photo-effects.js"></script>
+    <script src="js/form-handler.js"></script>
+</body>
+</html>

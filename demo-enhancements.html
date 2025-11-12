@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Enhancements Demo | York Region Caring Lions Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/enhancements.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .demo-section {
+            padding: calc(var(--grid-spacing) * 8) 0;
+            border-bottom: 2px solid var(--border-color);
+        }
+        .demo-title {
+            text-align: center;
+            margin-bottom: calc(var(--grid-spacing) * 4);
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: calc(var(--grid-spacing) * 4);
+            margin-top: calc(var(--grid-spacing) * 4);
+        }
+        .demo-card {
+            background: var(--light-bg);
+            padding: calc(var(--grid-spacing) * 4);
+            border-radius: var(--corner-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        .demo-label {
+            font-weight: 600;
+            color: var(--text-gray);
+            margin-top: calc(var(--grid-spacing) * 2);
+        }
+        .feature-badge {
+            display: inline-block;
+            padding: calc(var(--grid-spacing) * 1) calc(var(--grid-spacing) * 2);
+            background: var(--accent-color);
+            color: white;
+            border-radius: var(--corner-radius);
+            font-size: 0.9rem;
+            margin: calc(var(--grid-spacing) * 1) 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://page.gensparksite.com/v1/base64_upload/25b65288eea400a4e2bff05935808fb1" alt="York Region Caring Lions Club Logo" style="height: 50px; margin-right: 12px;">
+                <span class="logo-text">
+                    <span class="en">Enhancements Demo</span>
+                </span>
+            </div>
+            <a href="index.html" class="btn btn-primary" style="font-size: 0.9rem;">
+                <i class="fas fa-home"></i> Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">🎨 UI/UX Enhancements Showcase</h1>
+            <p class="page-subtitle">Experience the refined interactions and animations</p>
+        </div>
+    </section>
+
+    <!-- Button Animations Demo -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">
+                <i class="fas fa-hand-pointer"></i> Button Animations
+            </h2>
+            <p style="text-align: center; margin-bottom: 40px; color: var(--text-gray);">
+                Click and hover over these buttons to see ripple effects, shimmer animations, and 3D lifts
+            </p>
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-heart"></i> Primary Button
+                    </button>
+                    <p class="demo-label">Ripple + Shimmer + Lift</p>
+                </div>
+                <div class="demo-card">
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-star"></i> Secondary Button
+                    </button>
+                    <p class="demo-label">Gradient Animation</p>
+                </div>
+                <div class="demo-card">
+                    <button class="btn btn-accent">
+                        <i class="fas fa-check"></i> Accent Button
+                    </button>
+                    <p class="demo-label">Scale Transform</p>
+                </div>
+                <div class="demo-card">
+                    <button class="btn btn-outline">
+                        <i class="fas fa-arrow-right"></i> Outline Button
+                    </button>
+                    <p class="demo-label">Fill Animation</p>
+                </div>
+                <div class="demo-card">
+                    <button class="btn btn-donate">
+                        <i class="fas fa-donate"></i> Donate (Pulsing)
+                    </button>
+                    <p class="demo-label">Pulse Glow Effect</p>
+                </div>
+                <div class="demo-card">
+                    <button class="btn btn-primary btn-large">
+                        <i class="fas fa-rocket"></i> Large Button
+                    </button>
+                    <p class="demo-label">Enhanced Scale</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Counters Demo -->
+    <section class="demo-section" style="background: #f9f9f9;">
+        <div class="container">
+            <h2 class="demo-title">
+                <i class="fas fa-chart-line"></i> Animated Counters
+            </h2>
+            <p style="text-align: center; margin-bottom: 40px; color: var(--text-gray);">
+                Scroll to this section to trigger the counter animations
+            </p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3 class="stat-number">500+</h3>
+                    <p class="stat-label">Active Volunteers</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3 class="stat-number">50+</h3>
+                    <p class="stat-label">Community Programs</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3 class="stat-number">200+</h3>
+                    <p class="stat-label">Events Annually</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-heart"></i>
+                    <h3 class="stat-number">10000+</h3>
+                    <p class="stat-label">Lives Impacted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card Animations Demo -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">
+                <i class="fas fa-layer-group"></i> Card Animations
+            </h2>
+            <p style="text-align: center; margin-bottom: 40px; color: var(--text-gray);">
+                Hover over cards to see lift effects, icon bounces, and smooth transitions
+            </p>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-child-reaching"></i>
+                    </div>
+                    <h3 class="program-title">Youth Development</h3>
+                    <p class="program-description">
+                        Hover me to see the icon bounce and card lift!
+                    </p>
+                    <span class="feature-badge">Icon Bounce</span>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-hands-holding-circle"></i>
+                    </div>
+                    <h3 class="program-title">Community Service</h3>
+                    <p class="program-description">
+                        Card lifts with shadow depth on hover
+                    </p>
+                    <span class="feature-badge">3D Lift</span>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-kit-medical"></i>
+                    </div>
+                    <h3 class="program-title">First-Aid Training</h3>
+                    <p class="program-description">
+                        Smooth transitions with cubic bezier easing
+                    </p>
+                    <span class="feature-badge">Smooth Easing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typography Demo -->
+    <section class="demo-section" style="background: #f9f9f9;">
+        <div class="container">
+            <h2 class="demo-title">
+                <i class="fas fa-font"></i> Enhanced Typography
+            </h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h1>H1: Large Display Heading (900 weight)</h1>
+                <h2>H2: Section Title with Underline Accent</h2>
+                <h3>H3: Subsection Heading (700 weight)</h3>
+                <p style="font-size: 1.05rem; line-height: 1.8;">
+                    Body text has been optimized for readability with increased line height (1.8), 
+                    slightly larger font size (1.05rem), and improved letter spacing. The result is 
+                    comfortable reading for both English and Chinese content.
+                </p>
+                <p style="font-size: 1.05rem; line-height: 1.8; margin-top: 20px;">
+                    <strong>Enhanced contrast</strong>, <em>smooth transitions</em>, and 
+                    <a href="#" style="color: var(--primary-color);">interactive elements</a> 
+                    work together to create a <span style="background: var(--secondary-color); padding: 2px 8px; border-radius: 4px;">polished experience</span>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Progress Indicator -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">
+                <i class="fas fa-arrows-alt-v"></i> Scroll Enhancements
+            </h2>
+            <p style="text-align: center; margin-bottom: 40px; color: var(--text-gray);">
+                Notice the colorful progress bar at the very top? It tracks your scroll position!
+            </p>
+            <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <div class="feature-badge" style="display: block; margin: 20px auto;">
+                    ✨ Parallax Effects
+                </div>
+                <div class="feature-badge" style="display: block; margin: 20px auto;">
+                    🎬 Fade-In Animations
+                </div>
+                <div class="feature-badge" style="display: block; margin: 20px auto;">
+                    📊 Progress Tracking
+                </div>
+                <div class="feature-badge" style="display: block; margin: 20px auto;">
+                    🚀 Staggered Reveals
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Summary -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">
+                    All Enhancements Are Active Site-Wide
+                </h2>
+                <p class="cta-subtitle">
+                    Every page benefits from these refinements automatically
+                </p>
+                <div class="cta-buttons">
+                    <a href="index.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-home"></i> Explore Full Site
+                    </a>
+                    <a href="gallery.html" class="btn btn-secondary btn-large">
+                        <i class="fas fa-images"></i> Try Enhanced Gallery
+                    </a>
+                </div>
+                <div style="margin-top: 40px; color: rgba(255,255,255,0.9);">
+                    <h3 style="margin-bottom: 20px;">📋 What's Enhanced:</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; text-align: left;">
+                        <div>✅ Button animations</div>
+                        <div>✅ Color contrast</div>
+                        <div>✅ Typography</div>
+                        <div>✅ Mobile navigation</div>
+                        <div>✅ Scroll animations</div>
+                        <div>✅ Gallery lightbox</div>
+                        <div>✅ Animated counters</div>
+                        <div>✅ Page transitions</div>
+                        <div>✅ Form interactions</div>
+                        <div>✅ Accessibility</div>
+                        <div>✅ Performance</div>
+                        <div>✅ Micro-interactions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="text-align: center; padding: 40px 0;">
+                <h3 style="color: var(--secondary-color); margin-bottom: 20px;">
+                    🎨 Enhanced UI/UX Demo
+                </h3>
+                <p style="color: rgba(255,255,255,0.8);">
+                    York Region Caring Lions Club - Version 2.0 Enhanced
+                </p>
+                <div style="margin-top: 30px;">
+                    <a href="index.html" class="btn btn-outline">
+                        <i class="fas fa-arrow-left"></i> Return to Main Site
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/enhancements.js"></script>
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | York Region Caring Lions Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/enhancements.css">
+    <link rel="stylesheet" href="css/photo-optimization.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://page.gensparksite.com/v1/base64_upload/25b65288eea400a4e2bff05935808fb1" alt="York Region Caring Lions Club Logo" style="height: 50px; margin-right: 12px;">
+                <span class="logo-text">
+                    <span class="en">York Region Caring Lions Club</span>
+                    <span class="zh" style="display: none;">加拿大关爱狮子会</span>
+                </span>
+            </div>
+            <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-en="Home" data-zh="首页">Home</a></li>
+                <li><a href="about.html" data-en="About Us" data-zh="关于我们">About Us</a></li>
+                <li><a href="programs.html" data-en="Programs" data-zh="项目活动">Programs</a></li>
+                <li><a href="events.html" data-en="Events" data-zh="活动日历">Events</a></li>
+                <li><a href="gallery.html" data-en="Gallery" data-zh="照片墙">Gallery</a></li>
+                <li><a href="contact.html" data-en="Contact" data-zh="联系我们">Contact</a></li>
+                <li><a href="donate.html" class="btn-donate active" data-en="Donate" data-zh="捐款支持">Donate</a></li>
+            </ul>
+            <button class="lang-switch" id="langSwitch">
+                <span class="en">中文</span>
+                <span class="zh" style="display: none;">EN</span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                <span class="en">Support Our Mission</span>
+                <span class="zh" style="display: none;">支持我们的使命</span>
+            </h1>
+            <p class="page-subtitle">
+                <span class="en">Your generosity helps us continue serving communities and changing lives</span>
+                <span class="zh" style="display: none;">您的慷慨帮助我们继续服务社区和改变生活</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="donation-section">
+        <div class="container">
+            <div class="form-container">
+                <h2 style="text-align: center; margin-bottom: 20px; font-family: var(--font-heading); color: var(--primary-color);">
+                    <span class="en">Donation Intent Registration</span>
+                    <span class="zh" style="display: none;">捐款意向登记</span>
+                </h2>
+                
+                <p style="text-align: center; margin-bottom: 30px; color: var(--text-gray); font-size: 1.05rem;">
+                    <span class="en">Please fill out this form to register your donation intent. Our team will contact you within 24 hours with payment instructions.</span>
+                    <span class="zh" style="display: none;">请填写此表单登记您的捐款意向。我们的团队将在24小时内联系您并提供支付说明。</span>
+                </p>
+
+                <!-- Payment Methods Info Box -->
+                <div style="background: linear-gradient(135deg, rgba(255,99,71,0.08) 0%, rgba(50,205,50,0.08) 100%); 
+                            padding: 2rem; border-radius: 16px; margin-bottom: 2rem; 
+                            border-left: 4px solid var(--primary-color);">
+                    <h3 style="font-family: var(--font-heading); color: var(--text-dark); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-credit-card" style="color: var(--primary-color);"></i>
+                        <span class="en">Available Payment Methods</span>
+                        <span class="zh" style="display: none;">可用支付方式</span>
+                    </h3>
+                    <p style="margin-bottom: 1rem; color: var(--text-gray);">
+                        <span class="en">After submitting this form, you can complete your donation through any of the following methods:</span>
+                        <span class="zh" style="display: none;">提交表单后，您可以通过以下任何方式完成捐款：</span>
+                    </p>
+                    <div style="display: grid; gap: 1rem;">
+                        <!-- e-Transfer -->
+                        <div style="background: white; padding: 1.25rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                            <div style="display: flex; align-items: start; gap: 1rem;">
+                                <div style="width: 45px; height: 45px; background: linear-gradient(135deg, var(--primary-color) 0%, #ff8566 100%); 
+                                            border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-money-bill-transfer" style="color: white; font-size: 1.3rem;"></i>
+                                </div>
+                                <div style="flex: 1;">
+                                    <h4 style="margin: 0 0 0.5rem 0; color: var(--text-dark); font-weight: 600;">
+                                        <span class="en">Interac e-Transfer (Recommended)</span>
+                                        <span class="zh" style="display: none;">Interac 电子转账（推荐）</span>
+                                    </h4>
+                                    <p style="margin: 0 0 0.5rem 0; color: var(--text-gray); font-size: 0.95rem;">
+                                        <span class="en">Fast, secure, and convenient for Canadian donors</span>
+                                        <span class="zh" style="display: none;">快速、安全，方便加拿大捐赠者</span>
+                                    </p>
+                                    <div style="background: rgba(50,205,50,0.1); padding: 0.75rem; border-radius: 8px; margin-top: 0.5rem;">
+                                        <p style="margin: 0; font-weight: 600; color: var(--text-dark);">
+                                            <i class="fas fa-envelope" style="color: var(--accent-green); margin-right: 0.5rem;"></i>
+                                            <span class="en">Send to:</span>
+                                            <span class="zh" style="display: none;">发送至：</span>
+                                            <span style="color: var(--primary-color);">love521org@gmail.com</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cheque -->
+                        <div style="background: white; padding: 1.25rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                            <div style="display: flex; align-items: start; gap: 1rem;">
+                                <div style="width: 45px; height: 45px; background: linear-gradient(135deg, #4CAF50 0%, #66bb6a 100%); 
+                                            border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-money-check" style="color: white; font-size: 1.3rem;"></i>
+                                </div>
+                                <div style="flex: 1;">
+                                    <h4 style="margin: 0 0 0.5rem 0; color: var(--text-dark); font-weight: 600;">
+                                        <span class="en">Cheque</span>
+                                        <span class="zh" style="display: none;">支票</span>
+                                    </h4>
+                                    <p style="margin: 0 0 0.5rem 0; color: var(--text-gray); font-size: 0.95rem;">
+                                        <span class="en">Make cheque payable to "York Region Caring Lions Club"</span>
+                                        <span class="zh" style="display: none;">支票抬头请写"York Region Caring Lions Club"</span>
+                                    </p>
+                                    <div style="background: rgba(76,175,80,0.1); padding: 0.75rem; border-radius: 8px; margin-top: 0.5rem;">
+                                        <p style="margin: 0; font-weight: 600; color: var(--text-dark);">
+                                            <i class="fas fa-map-marker-alt" style="color: var(--accent-green); margin-right: 0.5rem;"></i>
+                                            <span class="en">Mail to:</span>
+                                            <span class="zh" style="display: none;">邮寄至：</span>
+                                        </p>
+                                        <p style="margin: 0.5rem 0 0 1.75rem; color: var(--text-gray); line-height: 1.6;">
+                                            7181 Woodbine Ave<br>
+                                            Markham, ON L3R 1A3<br>
+                                            Canada
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cash/In-Person -->
+                        <div style="background: white; padding: 1.25rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                            <div style="display: flex; align-items: start; gap: 1rem;">
+                                <div style="width: 45px; height: 45px; background: linear-gradient(135deg, #FF9800 0%, #FFB74D 100%); 
+                                            border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <i class="fas fa-hand-holding-usd" style="color: white; font-size: 1.3rem;"></i>
+                                </div>
+                                <div style="flex: 1;">
+                                    <h4 style="margin: 0 0 0.5rem 0; color: var(--text-dark); font-weight: 600;">
+                                        <span class="en">Cash or In-Person</span>
+                                        <span class="zh" style="display: none;">现金或现场捐赠</span>
+                                    </h4>
+                                    <p style="margin: 0 0 0.5rem 0; color: var(--text-gray); font-size: 0.95rem;">
+                                        <span class="en">Visit our office or donate at any of our community events</span>
+                                        <span class="zh" style="display: none;">访问我们的办公室或在我们的任何社区活动中捐赠</span>
+                                    </p>
+                                    <div style="background: rgba(255,152,0,0.1); padding: 0.75rem; border-radius: 8px; margin-top: 0.5rem;">
+                                        <p style="margin: 0; font-weight: 600; color: var(--text-dark);">
+                                            <i class="fas fa-phone" style="color: #FF9800; margin-right: 0.5rem;"></i>
+                                            <span class="en">Contact us:</span>
+                                            <span class="zh" style="display: none;">联系我们：</span>
+                                            <a href="tel:+14168328158" style="color: var(--primary-color); text-decoration: none;">+1 (416) 832-8158</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(50,205,50,0.1); border-radius: 10px; border-left: 3px solid var(--accent-green);">
+                        <p style="margin: 0; color: var(--text-dark); font-size: 0.95rem;">
+                            <i class="fas fa-info-circle" style="color: var(--accent-green); margin-right: 0.5rem;"></i>
+                            <strong class="en">Tax Receipt:</strong>
+                            <strong class="zh" style="display: none;">税务收据：</strong>
+                            <span class="en">Official tax receipts will be issued for all donations over $20.</span>
+                            <span class="zh" style="display: none;">所有超过20加元的捐款都将开具正式税务收据。</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <form id="donationForm">
+                    <div class="form-group">
+                        <label>
+                            <span class="en">Select Donation Amount</span>
+                            <span class="zh" style="display: none;">选择捐款金额</span>
+                        </label>
+                        <div class="donation-amounts">
+                            <div class="amount-option">
+                                <input type="radio" id="amount25" name="amount" value="25" required>
+                                <label for="amount25" class="amount-label">$25</label>
+                            </div>
+                            <div class="amount-option">
+                                <input type="radio" id="amount50" name="amount" value="50">
+                                <label for="amount50" class="amount-label">$50</label>
+                            </div>
+                            <div class="amount-option">
+                                <input type="radio" id="amount100" name="amount" value="100">
+                                <label for="amount100" class="amount-label">$100</label>
+                            </div>
+                            <div class="amount-option">
+                                <input type="radio" id="amount250" name="amount" value="250">
+                                <label for="amount250" class="amount-label">$250</label>
+                            </div>
+                            <div class="amount-option">
+                                <input type="radio" id="amount500" name="amount" value="500">
+                                <label for="amount500" class="amount-label">$500</label>
+                            </div>
+                            <div class="amount-option">
+                                <input type="radio" id="amountOther" name="amount" value="other">
+                                <label for="amountOther" class="amount-label">
+                                    <span class="en">Other</span>
+                                    <span class="zh" style="display: none;">其他</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="customAmountGroup" style="display: none;">
+                        <label for="customAmount">
+                            <span class="en">Custom Amount ($)</span>
+                            <span class="zh" style="display: none;">自定义金额（$）</span>
+                        </label>
+                        <input type="number" id="customAmount" min="1" step="1" placeholder="Enter amount">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donorName">
+                            <span class="en">Full Name *</span>
+                            <span class="zh" style="display: none;">全名 *</span>
+                        </label>
+                        <input type="text" id="donorName" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donorEmail">
+                            <span class="en">Email Address *</span>
+                            <span class="zh" style="display: none;">电子邮箱 *</span>
+                        </label>
+                        <input type="email" id="donorEmail" required placeholder="john@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donorPhone">
+                            <span class="en">Phone Number</span>
+                            <span class="zh" style="display: none;">电话号码</span>
+                        </label>
+                        <input type="tel" id="donorPhone" placeholder="+1 (416) 555-0123">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <span class="en">Donation Frequency</span>
+                            <span class="zh" style="display: none;">捐款频率</span>
+                        </label>
+                        <select id="frequency" required>
+                            <option value="once" data-en="One-time donation" data-zh="一次性捐款">One-time donation</option>
+                            <option value="monthly" data-en="Monthly recurring" data-zh="每月定期">Monthly recurring</option>
+                            <option value="yearly" data-en="Yearly recurring" data-zh="每年定期">Yearly recurring</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            <span class="en">Message (Optional)</span>
+                            <span class="zh" style="display: none;">留言（可选）</span>
+                        </label>
+                        <textarea id="message" placeholder="Leave a message..."></textarea>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="receiveUpdates">
+                        <label for="receiveUpdates">
+                            <span class="en">I would like to receive updates about how my donation is making a difference</span>
+                            <span class="zh" style="display: none;">我希望收到有关我的捐款如何产生影响的更新</span>
+                        </label>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            <span class="en">Submit Donation Intent</span>
+                            <span class="zh" style="display: none;">提交捐款意向</span>
+                        </button>
+                        <p style="text-align: center; margin-top: 1rem; color: var(--text-gray); font-size: 0.9rem;">
+                            <i class="fas fa-shield-alt" style="color: var(--accent-green);"></i>
+                            <span class="en">Your information is secure and will only be used for donation processing</span>
+                            <span class="zh" style="display: none;">您的信息是安全的，仅用于处理捐款</span>
+                        </p>
+                    </div>
+                </form>
+
+                <div class="donation-info">
+                    <h3>
+                        <span class="en">Your Impact</span>
+                        <span class="zh" style="display: none;">您的影响</span>
+                    </h3>
+                    <ul>
+                        <li class="en">$25 provides school supplies for one student</li>
+                        <li class="zh" style="display: none;">25美元为一名学生提供学习用品</li>
+                        <li class="en">$50 funds a first-aid training session</li>
+                        <li class="zh" style="display: none;">50美元资助一次急救培训课程</li>
+                        <li class="en">$100 supports a youth mentorship program for one month</li>
+                        <li class="zh" style="display: none;">100美元支持一个月的青年导师计划</li>
+                        <li class="en">$250 helps organize a community event</li>
+                        <li class="zh" style="display: none;">250美元帮助组织社区活动</li>
+                        <li class="en">$500 provides comprehensive support for a family in need</li>
+                        <li class="zh" style="display: none;">500美元为有需要的家庭提供全面支持</li>
+                    </ul>
+                    <p style="margin-top: 20px; color: var(--text-gray);">
+                        <span class="en">
+                            <strong>Tax Receipt:</strong> Canada Caring Lions Club is a registered charity. 
+                            Tax receipts will be issued for all donations over $20.
+                        </span>
+                        <span class="zh" style="display: none;">
+                            <strong>税务收据：</strong>加拿大关爱狮子会是注册慈善机构。
+                            所有超过20美元的捐款都将开具税务收据。
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">
+                        <span class="en">York Region Caring Lions Club</span>
+                        <span class="zh" style="display: none;">加拿大关爱狮子会</span>
+                    </h3>
+                    <p class="footer-text">
+                        <span class="en">Serving communities with compassion and dedication since 2015.</span>
+                        <span class="zh" style="display: none;">自2015年以来，用关爱和奉献服务社区。</span>
+                    </p>
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.1); border-radius: 8px; font-size: 0.9rem;">
+                        <i class="fas fa-globe" style="margin-right: 0.5rem; color: var(--secondary-color);"></i>
+                        <span class="en">Proud Member of<br><strong>Lions Clubs International</strong></span>
+                        <span class="zh" style="display: none;">国际狮子会自豪成员<br><strong>Lions Clubs International</strong></span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="en">Quick Links</span>
+                        <span class="zh" style="display: none;">快速链接</span>
+                    </h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-en="About Us" data-zh="关于我们">About Us</a></li>
+                        <li><a href="programs.html" data-en="Programs" data-zh="项目活动">Programs</a></li>
+                        <li><a href="events.html" data-en="Events" data-zh="活动日历">Events</a></li>
+                        <li><a href="gallery.html" data-en="Gallery" data-zh="照片墙">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="en">Get Involved</span>
+                        <span class="zh" style="display: none;">参与我们</span>
+                    </h4>
+                    <ul class="footer-links">
+                        <li><a href="joinus.html" data-en="Volunteer" data-zh="志愿服务">Volunteer</a></li>
+                        <li><a href="donate.html" data-en="Donate" data-zh="捐款支持">Donate</a></li>
+                        <li><a href="events.html" data-en="Upcoming Events" data-zh="近期活动">Upcoming Events</a></li>
+                        <li><a href="contact.html" data-en="Contact Us" data-zh="联系我们">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">
+                        <span class="en">Contact</span>
+                        <span class="zh" style="display: none;">联系方式</span>
+                    </h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 7181 Woodbine Ave, Markham, ON L3R 1A3</li>
+                        <li><i class="fas fa-phone"></i> +1 (416) 832-8158</li>
+                        <li><i class="fas fa-envelope"></i> love521org@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 York Region Caring Lions Club (加拿大关爱狮子会). 
+                    <span class="en">All rights reserved.</span>
+                    <span class="zh" style="display: none;">版权所有。</span>
+                    | 
+                    <a href="legal.html" style="color: var(--secondary-color); text-decoration: none; font-weight: 500;">
+                        <span class="en">Legal & Privacy</span>
+                        <span class="zh" style="display: none;">法律与隐私</span>
+                    </a>
+                </p>
+                <p style="margin-top: 0.75rem; font-size: 0.85rem; opacity: 0.8;">
+                    <span class="en">Website Development & Technical Support by</span>
+                    <span class="zh" style="display: none;">网站开发及技术支持</span>
+                    <a href="https://www.ccbonline.ca" target="_blank" rel="noopener noreferrer" style="color: var(--secondary-color); text-decoration: none; font-weight: 600; margin: 0 0.25rem;">
+                        CCBONLINE Inc.
+                    </a>
+                    | 
+                    <a href="mailto:support@ccbonline.ca" style="color: inherit; text-decoration: none; margin-left: 0.25rem;">
+                        <i class="fas fa-envelope" style="margin-right: 0.25rem;"></i>support@ccbonline.ca
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav-item"><i class="fas fa-home"></i><span class="en">Home</span><span class="zh" style="display: none;">首页</span></a>
+        <a href="programs.html" class="bottom-nav-item"><i class="fas fa-th-large"></i><span class="en">Programs</span><span class="zh" style="display: none;">项目</span></a>
+        <a href="events.html" class="bottom-nav-item"><i class="fas fa-calendar"></i><span class="en">Events</span><span class="zh" style="display: none;">活动</span></a>
+        <a href="joinus.html" class="bottom-nav-item"><i class="fas fa-user-plus"></i><span class="en">Join</span><span class="zh" style="display: none;">加入</span></a>
+        <a href="donate.html" class="bottom-nav-item active"><i class="fas fa-donate"></i><span class="en">Donate</span><span class="zh" style="display: none;">捐款</span></a>
+    </nav>
+
+    <script src="js/main.js"></script>
+    <script src="js/enhancements.js"></script>
+    <script src="js/photo-effects.js"></script>
+    <script src="js/form-handler.js"></script>
+    <script>
+        // Show/hide custom amount field
+        document.querySelectorAll('input[name="amount"]').forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                const customGroup = document.getElementById('customAmountGroup');
+                if (e.target.value === 'other') {
+                    customGroup.style.display = 'block';
+                    document.getElementById('customAmount').required = true;
+                } else {
+                    customGroup.style.display = 'none';
+                    document.getElementById('customAmount').required = false;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
